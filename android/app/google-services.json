@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "166672310241",
+    "project_id": "fitness-helper-6a65d",
+    "storage_bucket": "fitness-helper-6a65d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166672310241:android:4f364f88dac2e8fcc6fca0",
+        "android_client_info": {
+          "package_name": "cpp.edu.mhoac.cs4750_fitness_helper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166672310241-3j43a6sr0vdjb7epg1l8hmadpltangtn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo-8sZ1qg1_lDFzwcmJ7BMTjujx8_hK7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166672310241-3j43a6sr0vdjb7epg1l8hmadpltangtn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
