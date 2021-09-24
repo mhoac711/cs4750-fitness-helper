@@ -45,16 +45,24 @@ class _AboutPageState extends State<AboutPage> {
       ),
       body: Column(
         children: [
-          Image.asset('assets/images/me_picture.JPG'),
+          Container(
+            margin: EdgeInsets.only(top:15, left: 15, right: 15),
+              child: Image.asset(
+                'assets/images/me.JPG',
+                height: 350,
+                width: 450,
+                fit: BoxFit.fitHeight,
+              ),
+          ),
           Container(
             alignment: Alignment.topLeft,
             margin: EdgeInsets.only(top: 20,left: 25),
             child: Text(
                 'Name: Max Hoac',
             style: TextStyle(
-              fontSize: 25,
-              fontWeight: FontWeight.bold,
-              color: Colors.black,
+              fontFamily: 'LobsterTwo',
+              fontSize: 20,
+              color: Colors.lightBlue[900],
             ),
             ),
           )

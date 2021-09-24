@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import '../../home_page.dart';
@@ -16,6 +17,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset : false,
       backgroundColor: Colors.deepPurpleAccent[100],
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -88,10 +90,17 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
               onPressed: () {
-
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => HomePage()));
+                FirebaseAuth.instance.signInWithEmailAndPassword(
+                    email: emailController.text, password: passwordController.text)
+                .then((value){
+                  print("Login Successful");
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomePage()));
+                }).catchError((error){
+                  print("Failed to login");
+                  print(error.toString());
+                });
               }
           ),
           FlatButton(

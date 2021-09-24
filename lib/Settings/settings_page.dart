@@ -52,9 +52,9 @@ class _SettingsPageState extends State<SettingsPage> {
             child: Text(
               'Settings',
               style: TextStyle(
-                  fontSize: 35,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
+                fontFamily: 'LobsterTwo',
+                fontSize: 35,
+                color: Colors.lightBlue[900],
               ),
             ),
           ),
@@ -65,8 +65,9 @@ class _SettingsPageState extends State<SettingsPage> {
                 child:Text(
                   "Account information",
                   style: TextStyle(
-                    color: Colors.black,
+                    fontFamily: 'LobsterTwo',
                     fontSize: 25,
+                    color: Colors.lightBlue[900],
                   ),
                 ),
                 onPressed: (){
@@ -84,8 +85,9 @@ class _SettingsPageState extends State<SettingsPage> {
                 child:Text(
                   "About the Developers",
                   style: TextStyle(
-                    color: Colors.black,
+                    fontFamily: 'LobsterTwo',
                     fontSize: 25,
+                    color: Colors.lightBlue[900],
                   ),
                 ),
                 onPressed: (){

@@ -47,23 +47,25 @@ class _AccountDetailsState extends State<AccountDetails> {
         children: [
           Container(
             alignment: Alignment.topLeft,
-            margin: EdgeInsets.only(left: 25, top: 25, bottom: 30),
+            margin: EdgeInsets.only(left: 25, top: 35, bottom: 30),
             child: Text(
-              'Email: sleepy@gmail.com',
+              'Email: ',
               style: TextStyle(
+                fontFamily: 'LobsterTwo',
                 fontSize: 25,
-                fontWeight: FontWeight.normal,
+                color: Colors.lightBlue[900],
               ),
             ),
           ),
           Container(
             alignment: Alignment.topLeft,
-            margin: EdgeInsets.only(left: 25, top: 10, bottom: 30),
+            margin: EdgeInsets.only(left: 25, top: 10, bottom: 10),
             child: Text(
-              'Password: 123456',
+              'Password: ',
               style: TextStyle(
+                fontFamily: 'LobsterTwo',
                 fontSize: 25,
-                fontWeight: FontWeight.normal,
+                color: Colors.lightBlue[900],
               ),
             ),
           ),
