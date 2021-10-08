@@ -1,16 +1,7 @@
 # cs4750_fitness_helper
 
-A new Flutter project.
+Welcome to the app Fitness Helper! 
+A common trend that I found upon those around me is that there seems to be a severe lack of commimentment regarding exercise, when the individual wishes to actively participate in it. The reasoning behind their struggle can vary whether it just be an actual lack of dedication or having the issue of knowing what to actually do when starting out. With this app, I aspire to solve both of these issues by providing a easily accessible database of exercise that target different areas of the body and are further divided into separate divisions in regards to their difficulty. Overall, the purpose of this app is provide users with an easy way of accessing and finding exercises that fit their level of experience and build up towards the more difficult exercises. 
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
