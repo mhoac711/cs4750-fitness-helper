@@ -37,6 +37,7 @@ class _DifficultAbState extends State<DifficultAb> {
           'F / H',
           style: TextStyle(
             fontFamily: 'LobsterTwo',
+            fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],
           ),
@@ -60,9 +61,9 @@ class _DifficultAbState extends State<DifficultAb> {
             child: Text(
               'DIFFICULT',
               style: TextStyle(
-                fontSize: 35,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'LobsterTwo',
+                fontSize: 32,
+                fontFamily: 'PermanentMarker',
+                fontWeight: FontWeight.normal,
                 color: Colors.deepPurple[800],
 
               ),
@@ -78,8 +79,8 @@ class _DifficultAbState extends State<DifficultAb> {
                     'Exercise',
                     style: TextStyle(
                       fontSize: 25,
-                      fontFamily: 'LobsterTwo',
-                      fontWeight: FontWeight.bold,
+                      fontFamily: 'PermanentMarker',
+                      fontWeight: FontWeight.normal,
                       decoration: TextDecoration.underline,
                       color: Colors.deepPurple[800],
                     ),
@@ -92,8 +93,8 @@ class _DifficultAbState extends State<DifficultAb> {
                     'Reps/Time',
                     style: TextStyle(
                       fontSize: 25,
-                      fontFamily: 'LobsterTwo',
-                      fontWeight: FontWeight.bold,
+                      fontFamily: 'PermanentMarker',
+                      fontWeight: FontWeight.normal,
                       decoration: TextDecoration.underline,
                       color: Colors.deepPurple[800],
 
@@ -121,8 +122,9 @@ class _DifficultAbState extends State<DifficultAb> {
                                 Text(
                                   '${diffAbList[index]['name']}',
                                   style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'LobsterTwo',
+                                    fontSize: 18,
+                                    fontFamily: 'PermanentMarker',
+                                    fontWeight: FontWeight.normal,
                                     color: Colors.blue[50],
                                   ),
                                 ),
@@ -132,8 +134,9 @@ class _DifficultAbState extends State<DifficultAb> {
                                   child: Text(
                                     '${diffAbList[index]['reps']}',
                                     style: TextStyle(
-                                      fontSize: 20,
-                                      fontFamily: 'LobsterTwo',
+                                      fontSize: 18,
+                                      fontFamily: 'PermanentMarker',
+                                      fontWeight: FontWeight.normal,
                                       color: Colors.blue[50],
                                     ),
                                   ),

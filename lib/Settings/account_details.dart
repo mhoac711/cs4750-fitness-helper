@@ -1,3 +1,5 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'settings_page.dart';
 
@@ -9,6 +11,32 @@ class AccountDetails extends StatefulWidget {
 }
 
 class _AccountDetailsState extends State<AccountDetails> {
+  var accountList = [];
+  _AccountDetailsState(){
+    FirebaseDatabase.instance.reference().child("account").once()
+        .then((datasnapshot){
+      print("Loaded Data");
+      print("Key");
+      print(datasnapshot.key);
+      print("Value:");
+      print(datasnapshot.value);
+      print("Iterate through accounts:");
+      var accountTempList = [];
+      datasnapshot.value.forEach((k,v){
+        print(k);
+        print(v);
+        accountTempList.add(v);
+      });
+      print("Final Account List: ");
+      print(accountTempList);
+      accountList = accountTempList;
+      setState(() {
+
+      });
+    }).catchError((error){
+      print("failed");
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,6 +55,7 @@ class _AccountDetailsState extends State<AccountDetails> {
             'F / H',
             style: TextStyle(
               fontFamily: 'LobsterTwo',
+              fontWeight: FontWeight.bold,
               fontSize: 25,
               color: Colors.tealAccent[100],
             ),

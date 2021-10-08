@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import '../Settings/settings_page.dart';
 import 'difficult_ab.dart';
@@ -31,17 +30,16 @@ class _AbExerciseState extends State<AbExercise> {
           'F / H',
           style: TextStyle(
             fontFamily: 'LobsterTwo',
+            fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],
           ),
         ),
         actions: [
           IconButton(
-            onPressed: (){
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => SettingsPage())
-              );
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => SettingsPage()));
             },
             icon: Icon(Icons.settings),
           ),
@@ -57,9 +55,9 @@ class _AbExerciseState extends State<AbExercise> {
                 child: Text(
                   'EASY',
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                    fontFamily: 'PermanentMarker',
+                    fontWeight: FontWeight.normal,
                     fontSize: 25,
-                    fontFamily: 'LobsterTwo',
                     color: Colors.lightBlue[900],
                   ),
                 ),
@@ -68,17 +66,121 @@ class _AbExerciseState extends State<AbExercise> {
               Container(
                 margin: EdgeInsets.only(top: 20, right: 35),
                 child: IconButton(
-                    onPressed: (){
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => EasyAb())
-                      );
-                    },
-                    icon: Icon(IconData(57855, fontFamily: 'MaterialIcons'),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => EasyAb()));
+                  },
+                  icon: Icon(
+                    IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
-                      color: Colors.lightBlue[900],
+                    color: Colors.lightBlue[900],
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Container(
+            alignment: Alignment.center,
+            child: Row(
+              children: [
+                Container(
+                  margin: EdgeInsets.only(left: 20, right: 10, bottom: 15),
+                  decoration: ShapeDecoration(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(16.0),
+                      ),
+                      color: Colors.tealAccent[100]),
+                  child: IconButton(
+                    alignment: Alignment.center,
+                    icon: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(14.0),
+                        image: new DecorationImage(
+                            fit: BoxFit.fill,
+                            alignment: FractionalOffset.center,
+                            image: AssetImage('assets/images/easy_ab.jpg')),
                       ),
                     ),
+                    iconSize: 75,
+                    onPressed: () {},
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(left: 20, right: 10, bottom: 15),
+                  decoration: ShapeDecoration(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
+                    color: Colors.tealAccent[100],
+                  ),
+                  child: IconButton(
+                    alignment: Alignment.center,
+                    icon: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        image: new DecorationImage(
+                            fit: BoxFit.fill,
+                            alignment: FractionalOffset.center,
+                            image: AssetImage('assets/images/easy_ab.jpg')),
+                      ),
+                    ),
+                    iconSize: 75,
+                    onPressed: () {},
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(left: 20, right: 10, bottom: 15),
+                  decoration: ShapeDecoration(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(16.0),
+                      ),
+                      color: Colors.tealAccent[100]),
+                  child: IconButton(
+                    alignment: Alignment.center,
+                    icon: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        image: new DecorationImage(
+                            fit: BoxFit.fill,
+                            alignment: FractionalOffset.center,
+                            image: AssetImage('assets/images/easy_ab.jpg')),
+                      ),
+                    ),
+                    iconSize: 75,
+                    onPressed: () {},
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Row(
+            children: [
+              Container(
+                margin: EdgeInsets.only(left: 25, top: 20),
+                child: Text(
+                  'MODERATE',
+                  style: TextStyle(
+                    fontFamily: 'PermanentMarker',
+                    fontWeight: FontWeight.normal,
+                    fontSize: 25,
+                    color: Colors.lightBlue[900],
+                  ),
+                ),
+              ),
+              Spacer(),
+              Container(
+                margin: EdgeInsets.only(top: 20, right: 35),
+                child: IconButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => ModerateAb()));
+                  },
+                  icon: Icon(
+                    IconData(57855, fontFamily: 'MaterialIcons'),
+                    size: 25,
+                    color: Colors.lightBlue[900],
+                  ),
+                ),
               ),
             ],
           ),
@@ -92,200 +194,69 @@ class _AbExerciseState extends State<AbExercise> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16.0),
                     ),
-                    color: Colors.tealAccent[100]
-                  ),
-                  child: IconButton(
-                    alignment: Alignment.center,
-                    icon: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(14.0),
-                          image: new DecorationImage(
-                            fit: BoxFit.fill,
-                            alignment: FractionalOffset.center,
-                            image: NetworkImage('https://www.outsideonline.com/wp-content/uploads/migrated-images_parent/migrated-images_43/P430082-1-1_illustration-pushup.jpg')),
-                      ),
-                    ),
-                    iconSize: 75,
-                    onPressed: (){
-                    },
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.only(left: 20, right: 10, bottom: 15),
-                  decoration: ShapeDecoration(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                      ),
-                      color: Colors.tealAccent[100],
-                  ),
-                  child: IconButton(
-                    alignment: Alignment.center,
-                    icon: Container(
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                        image: new DecorationImage(
-                          fit: BoxFit.fill,
-                          alignment: FractionalOffset.center,
-                          image: NetworkImage('https://i.pinimg.com/originals/c6/e1/6a/c6e16a9b9dc7d97b0d4ad78b50e7b424.gif'),
-                        )
-                      ),
-                    ),
-                    iconSize: 75,
-
-                    onPressed: (){
-
-                    },
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.only(left: 20, right: 10, bottom: 15),
-                  decoration: ShapeDecoration(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(16.0),
-                      ),
-                      color: Colors.tealAccent[100]
-                  ),
-                  child: IconButton(
-                    alignment: Alignment.center,
-                    icon: Container(
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          image: new DecorationImage(
-                            fit: BoxFit.fill,
-                            alignment: FractionalOffset.center,
-                            image: NetworkImage('https://cdnb.artstation.com/p/assets/images/images/037/471/019/original/digital-artist-russian-twist.gif?1620463601'),
-                          )
-                      ),
-                    ),
-                    iconSize: 75,
-
-                    onPressed: (){
-
-                    },
-                  ),
-                ),
-
-              ],
-            ),
-          ),
-          Row(
-            children: [
-              Container(
-                margin: EdgeInsets.only(left: 25, top: 20),
-                child: Text(
-                  'MODERATE',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 25,
-                    fontFamily: 'LobsterTwo',
-                    color: Colors.lightBlue[900],
-                  ),
-                ),
-              ),
-              Spacer(),
-              Container(
-                margin: EdgeInsets.only(top: 20, right: 35),
-                child: IconButton(
-                  onPressed: (){
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => ModerateAb())
-                    );
-                  },
-                  icon: Icon(IconData(57855, fontFamily: 'MaterialIcons'),
-                      size: 25,
-                    color: Colors.lightBlue[900],
-                  ),
-                ),
-              ),
-            ],
-          ),
-          Container(
-            alignment: Alignment.center,
-            child: Row(
-              children: [
-                Container(
-                  margin: EdgeInsets.only(left: 20, right: 10, bottom: 15),
-                  decoration: ShapeDecoration(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(16.0),
-                      ),
-                      color: Colors.tealAccent[400],
-                  ),
-                  child: IconButton(
-                    alignment: Alignment.center,
-                    icon: Container(
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          image: new DecorationImage(
-                            fit: BoxFit.fill,
-                            alignment: FractionalOffset.center,
-                            image: NetworkImage('https://i.pinimg.com/originals/c0/d3/c9/c0d3c948ede881f235ee6e6ea97e57b4.gif'),
-                          )
-                      ),
-                    ),
-                    iconSize: 75,
-
-                    onPressed: (){
-
-                    },
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.only(left: 20, right: 10, bottom: 15),
-                  decoration: ShapeDecoration(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(16.0),
-                      ),
                     color: Colors.tealAccent[400],
                   ),
                   child: IconButton(
                     alignment: Alignment.center,
                     icon: Container(
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          image: new DecorationImage(
+                        borderRadius: BorderRadius.circular(10.0),
+                        image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://www.spotebi.com/wp-content/uploads/2016/01/wood-chop-exercise-illustration-spotebi.gif'),
-                          )
+                            image: AssetImage('assets/images/moderate_ab.jpg')),
                       ),
                     ),
                     iconSize: 75,
-
-                    onPressed: (){
-
-                    },
+                    onPressed: () {},
                   ),
                 ),
                 Container(
                   margin: EdgeInsets.only(left: 20, right: 10, bottom: 15),
                   decoration: ShapeDecoration(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(16.0),
-                      ),
-                      color: Colors.tealAccent[400],
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16.0),
+                    ),
+                    color: Colors.tealAccent[400],
                   ),
                   child: IconButton(
                     alignment: Alignment.center,
                     icon: Container(
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          image: new DecorationImage(
+                        borderRadius: BorderRadius.circular(10.0),
+                        image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://www.lakediary.com/wp-content/uploads/2017/02/Flutter-kicks.gif'),
-                          )
+                            image: AssetImage('assets/images/moderate_ab.jpg')),
                       ),
                     ),
                     iconSize: 75,
-
-                    onPressed: (){
-
-                    },
+                    onPressed: () {},
                   ),
                 ),
-
+                Container(
+                  margin: EdgeInsets.only(left: 20, right: 10, bottom: 15),
+                  decoration: ShapeDecoration(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16.0),
+                    ),
+                    color: Colors.tealAccent[400],
+                  ),
+                  child: IconButton(
+                    alignment: Alignment.center,
+                    icon: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        image: new DecorationImage(
+                            fit: BoxFit.fill,
+                            alignment: FractionalOffset.center,
+                            image: AssetImage('assets/images/moderate_ab.jpg')),
+                      ),
+                    ),
+                    iconSize: 75,
+                    onPressed: () {},
+                  ),
+                ),
               ],
             ),
           ),
@@ -296,9 +267,9 @@ class _AbExerciseState extends State<AbExercise> {
                 child: Text(
                   'DIFFICULT',
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                    fontFamily: 'PermanentMarker',
+                    fontWeight: FontWeight.normal,
                     fontSize: 25,
-                    fontFamily: 'LobsterTwo',
                     color: Colors.lightBlue[900],
                   ),
                 ),
@@ -307,14 +278,13 @@ class _AbExerciseState extends State<AbExercise> {
               Container(
                 margin: EdgeInsets.only(top: 20, right: 35),
                 child: IconButton(
-                  onPressed: (){
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => DifficultAb())
-                    );
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => DifficultAb()));
                   },
-                  icon: Icon(IconData(57855, fontFamily: 'MaterialIcons'),
-                      size: 25,
+                  icon: Icon(
+                    IconData(57855, fontFamily: 'MaterialIcons'),
+                    size: 25,
                     color: Colors.lightBlue[900],
                   ),
                 ),
@@ -331,52 +301,21 @@ class _AbExerciseState extends State<AbExercise> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16.0),
                       ),
-                      color: Colors.deepPurple[800]
-                  ),
-                  child: IconButton(
-                    alignment: Alignment.center,
-                    icon: Container(
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          image: new DecorationImage(
-                            fit: BoxFit.fill,
-                            alignment: FractionalOffset.center,
-                            image: NetworkImage('https://personaltrainer.ebhasin.com/upload/Bicycle%20Crunch.gif'),
-                          )
-                      ),
-                    ),
-                    iconSize: 75,
-
-                    onPressed: (){
-
-                    },
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.only(left: 20, right: 10, bottom: 15),
-                  decoration: ShapeDecoration(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(16.0),
-                      ),
-                      color: Colors.deepPurple[800]
-                  ),
+                      color: Colors.deepPurple[800]),
                   child: IconButton(
                     alignment: Alignment.center,
                     icon: Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.0),
-                          image: new DecorationImage(
+                        image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://i.pinimg.com/originals/fb/a0/32/fba03216f52666e90f227281b48036b4.png'),
-                          )
+                            image:
+                                AssetImage('assets/images/difficult_ab.jpg')),
                       ),
                     ),
                     iconSize: 75,
-
-                    onPressed: (){
-
-                    },
+                    onPressed: () {},
                   ),
                 ),
                 Container(
@@ -385,25 +324,44 @@ class _AbExerciseState extends State<AbExercise> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16.0),
                       ),
-                      color: Colors.deepPurple[800]
-                  ),
+                      color: Colors.deepPurple[800]),
                   child: IconButton(
                     alignment: Alignment.center,
                     icon: Container(
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          image: new DecorationImage(
+                        borderRadius: BorderRadius.circular(10.0),
+                        image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://www.spotebi.com/wp-content/uploads/2015/05/v-sit-exercise-illustration.gif'),
-                          )
+                            image:
+                                AssetImage('assets/images/difficult_ab.jpg')),
                       ),
                     ),
                     iconSize: 75,
-
-                    onPressed: (){
-
-                    },
+                    onPressed: () {},
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(left: 20, right: 10, bottom: 15),
+                  decoration: ShapeDecoration(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(16.0),
+                      ),
+                      color: Colors.deepPurple[800]),
+                  child: IconButton(
+                    alignment: Alignment.center,
+                    icon: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10.0),
+                        image: new DecorationImage(
+                            fit: BoxFit.fill,
+                            alignment: FractionalOffset.center,
+                            image:
+                                AssetImage('assets/images/difficult_ab.jpg')),
+                      ),
+                    ),
+                    iconSize: 75,
+                    onPressed: () {},
                   ),
                 ),
               ],

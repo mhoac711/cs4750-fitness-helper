@@ -37,6 +37,7 @@ class _ModerateChestState extends State<ModerateChest> {
           'F / H',
           style: TextStyle(
             fontFamily: 'LobsterTwo',
+            fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],
           ),
@@ -60,9 +61,9 @@ class _ModerateChestState extends State<ModerateChest> {
             child: Text(
               'MODERATE',
               style: TextStyle(
-                fontSize: 35,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'LobsterTwo',
+                fontSize: 32,
+                fontFamily: 'PermanentMarker',
+                fontWeight: FontWeight.normal,
                 color: Colors.tealAccent[400],
 
               ),
@@ -77,9 +78,9 @@ class _ModerateChestState extends State<ModerateChest> {
                   child: Text(
                     'Exercise',
                     style: TextStyle(
+                      fontFamily: 'PermanentMarker',
+                      fontWeight: FontWeight.normal,
                       fontSize: 25,
-                      fontFamily: 'LobsterTwo',
-                      fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
                       color: Colors.tealAccent[400],
                     ),
@@ -91,9 +92,9 @@ class _ModerateChestState extends State<ModerateChest> {
                   child: Text(
                     'Reps/Time',
                     style: TextStyle(
+                      fontFamily: 'PermanentMarker',
+                      fontWeight: FontWeight.normal,
                       fontSize: 25,
-                      fontFamily: 'LobsterTwo',
-                      fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
                       color: Colors.tealAccent[400],
 
@@ -121,8 +122,9 @@ class _ModerateChestState extends State<ModerateChest> {
                                 Text(
                                   '${modChestList[index]['name']}',
                                   style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'LobsterTwo',
+                                    fontSize: 18,
+                                    fontFamily: 'PermanentMarker',
+                                    fontWeight: FontWeight.normal,
                                     color: Colors.blue[50],
                                   ),
                                 ),
@@ -132,8 +134,9 @@ class _ModerateChestState extends State<ModerateChest> {
                                   child: Text(
                                     '${modChestList[index]['reps']}',
                                     style: TextStyle(
-                                      fontSize: 20,
-                                      fontFamily: 'LobsterTwo',
+                                      fontSize: 18,
+                                      fontFamily: 'PermanentMarker',
+                                      fontWeight: FontWeight.normal,
                                       color: Colors.blue[50],
                                     ),
                                   ),

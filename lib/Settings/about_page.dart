@@ -27,6 +27,7 @@ class _AboutPageState extends State<AboutPage> {
           'F / H',
           style: TextStyle(
             fontFamily: 'LobsterTwo',
+            fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],
           ),
@@ -46,30 +47,74 @@ class _AboutPageState extends State<AboutPage> {
       body: Column(
         children: [
           Container(
-            margin: EdgeInsets.only(top:15, left: 15, right: 15),
+            decoration: BoxDecoration(
+              border: Border.all(
+                width: 5,
+                color: Colors.deepPurple,
+              ),
+
+            ),
+            margin: EdgeInsets.only(top:35, left: 15, right: 15),
               child: Image.asset(
                 'assets/images/me.JPG',
-                height: 350,
-                width: 450,
-                fit: BoxFit.fitHeight,
+                height: 300,
+                width: 325,
+                scale: 70,
+                fit: BoxFit.fitWidth,
               ),
           ),
           Container(
             alignment: Alignment.topLeft,
-            margin: EdgeInsets.only(top: 20,left: 25),
+            margin: EdgeInsets.only(top: 15,left: 25),
             child: Text(
                 'Name: Max Hoac',
             style: TextStyle(
-              fontFamily: 'LobsterTwo',
+              fontFamily: 'PermanentMarker',
               fontSize: 20,
-              color: Colors.lightBlue[900],
+              fontWeight: FontWeight.normal,
+              color: Colors.tealAccent[100],
             ),
             ),
-          )
-          // Image(
-          //   image: AssetImage('assets/images/me_picture.jpg'),
-          //   fit: BoxFit.cover,
-          // )
+          ),
+          Container(
+            alignment: Alignment.topLeft,
+            margin: EdgeInsets.only(top: 10,left: 25),
+            child: Text(
+              'Year: 3rd Year',
+              style: TextStyle(
+                fontFamily: 'PermanentMarker',
+                fontSize: 20,
+                fontWeight: FontWeight.normal,
+                color: Colors.tealAccent[100],
+              ),
+            ),
+          ),
+          Container(
+            alignment: Alignment.topLeft,
+            margin: EdgeInsets.only(top: 10,left: 25),
+            child: Text(
+              'Major: Computer Science',
+              style: TextStyle(
+                fontFamily: 'PermanentMarker',
+                fontSize: 20,
+                fontWeight: FontWeight.normal,
+                color: Colors.tealAccent[100],
+              ),
+            ),
+          ),
+          Container(
+            alignment: Alignment.topLeft,
+            margin: EdgeInsets.only(top: 10,left: 25),
+            child: Text(
+              'Hobbies: Basketball, running, taking care my dog',
+              style: TextStyle(
+                fontFamily: 'PermanentMarker',
+                fontSize: 20,
+                fontWeight: FontWeight.normal,
+                color: Colors.tealAccent[100],
+              ),
+            ),
+          ),
         ],
       ),
 

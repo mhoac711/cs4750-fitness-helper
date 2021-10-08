@@ -33,6 +33,7 @@ class _DifficultArmsState extends State<DifficultArms> {
           'F / H',
           style: TextStyle(
             fontFamily: 'LobsterTwo',
+            fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],
           ),
@@ -56,9 +57,9 @@ class _DifficultArmsState extends State<DifficultArms> {
             child: Text(
               'DIFFICULT',
               style: TextStyle(
-                fontSize: 35,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'LobsterTwo',
+                fontFamily: 'PermanentMarker',
+                fontWeight: FontWeight.normal,
+                fontSize: 32,
                 color: Colors.deepPurple[800],
 
               ),
@@ -73,9 +74,9 @@ class _DifficultArmsState extends State<DifficultArms> {
                   child: Text(
                     'Exercise',
                     style: TextStyle(
+                      fontFamily: 'PermanentMarker',
+                      fontWeight: FontWeight.normal,
                       fontSize: 25,
-                      fontFamily: 'LobsterTwo',
-                      fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
                       color: Colors.deepPurple[800],
                     ),
@@ -87,9 +88,9 @@ class _DifficultArmsState extends State<DifficultArms> {
                   child: Text(
                     'Reps/Time',
                     style: TextStyle(
+                      fontFamily: 'PermanentMarker',
+                      fontWeight: FontWeight.normal,
                       fontSize: 25,
-                      fontFamily: 'LobsterTwo',
-                      fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
                       color: Colors.deepPurple[800],
 
@@ -117,8 +118,9 @@ class _DifficultArmsState extends State<DifficultArms> {
                                 Text(
                                   '${diffArmList[index]['name']}',
                                   style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'LobsterTwo',
+                                    fontSize: 18,
+                                    fontFamily: 'PermanentMarker',
+                                    fontWeight: FontWeight.normal,
                                     color: Colors.blue[50],
                                   ),
                                 ),
@@ -128,8 +130,9 @@ class _DifficultArmsState extends State<DifficultArms> {
                                   child: Text(
                                     '${diffArmList[index]['reps']}',
                                     style: TextStyle(
-                                      fontSize: 20,
-                                      fontFamily: 'LobsterTwo',
+                                      fontSize: 18,
+                                      fontFamily: 'PermanentMarker',
+                                      fontWeight: FontWeight.normal,
                                       color: Colors.blue[50],
                                     ),
                                   ),

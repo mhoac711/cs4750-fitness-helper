@@ -33,6 +33,7 @@ class _HomePageState extends State<HomePage> {
           'F / H',
           style: TextStyle(
             fontFamily: 'LobsterTwo',
+            fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],
           ),
@@ -69,9 +70,9 @@ class _HomePageState extends State<HomePage> {
                       child: Text(
                         'ABS',
                         style: TextStyle(
-                          fontSize: 40,
-                          fontFamily: 'LobsterTwo',
-                          fontWeight: FontWeight.bold,
+                          fontSize: 38,
+                          fontFamily: 'PermanentMarker',
+                          fontWeight: FontWeight.normal,
                           color: Colors.lightBlue[900],
                         ),
                       ),
@@ -99,9 +100,9 @@ class _HomePageState extends State<HomePage> {
                       child: Text(
                         'CHEST',
                         style: TextStyle(
-                          fontSize: 40,
-                          fontFamily: 'LobsterTwo',
-                          fontWeight: FontWeight.bold,
+                          fontSize: 38,
+                          fontFamily: 'PermanentMarker',
+                          fontWeight: FontWeight.normal,
                           color: Colors.lightBlue[900],
                         ),
                       ),
@@ -136,9 +137,9 @@ class _HomePageState extends State<HomePage> {
                       child: Text(
                         'LEGS',
                         style: TextStyle(
-                          fontSize: 40,
-                          fontFamily: 'LobsterTwo',
-                          fontWeight: FontWeight.bold,
+                          fontSize: 38,
+                          fontFamily: 'PermanentMarker',
+                          fontWeight: FontWeight.normal,
                           color: Colors.lightBlue[900],
                         ),
                       ),
@@ -166,9 +167,9 @@ class _HomePageState extends State<HomePage> {
                       child: Text(
                         'ARMS',
                         style: TextStyle(
-                          fontSize: 40,
-                          fontFamily: 'LobsterTwo',
-                          fontWeight: FontWeight.bold,
+                          fontSize: 38,
+                          fontFamily: 'PermanentMarker',
+                          fontWeight: FontWeight.normal,
                           color: Colors.lightBlue[900],
                         ),
                       ),
@@ -203,9 +204,9 @@ class _HomePageState extends State<HomePage> {
                       child: Text(
                         'CARDIO',
                         style: TextStyle(
-                          fontSize: 40,
-                          fontFamily: 'LobsterTwo',
-                          fontWeight: FontWeight.bold,
+                          fontSize: 38,
+                          fontFamily: 'PermanentMarker',
+                          fontWeight: FontWeight.normal,
                           color: Colors.lightBlue[900],
                         ),
                       ),
@@ -233,9 +234,9 @@ class _HomePageState extends State<HomePage> {
                       child: Text(
                         'GLUTES',
                         style: TextStyle(
-                          fontSize: 40,
-                          fontFamily: 'LobsterTwo',
-                          fontWeight: FontWeight.bold,
+                          fontSize: 38,
+                          fontFamily: 'PermanentMarker',
+                          fontWeight: FontWeight.normal,
                           color: Colors.lightBlue[900],
                         ),
                       ),

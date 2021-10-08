@@ -1,3 +1,4 @@
+import 'package:cs4750_fitness_helper/Settings/about_app_page.dart';
 import 'package:flutter/material.dart';
 import 'about_page.dart';
 import 'account_details.dart';
@@ -28,6 +29,7 @@ class _SettingsPageState extends State<SettingsPage> {
           'F / H',
           style: TextStyle(
             fontFamily: 'LobsterTwo',
+            fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],
           ),
@@ -50,22 +52,24 @@ class _SettingsPageState extends State<SettingsPage> {
             alignment: Alignment.topLeft,
             margin: EdgeInsets.only(top: 15, left: 20),
             child: Text(
-              'Settings',
+              'About:',
               style: TextStyle(
-                fontFamily: 'LobsterTwo',
-                fontSize: 35,
+                fontFamily: 'PermanentMarker',
+                decoration: TextDecoration.underline,
+                fontSize: 30,
                 color: Colors.lightBlue[900],
               ),
             ),
           ),
           Container(
             alignment: Alignment.topLeft,
-            margin: EdgeInsets.only(top: 15, left: 5),
+            margin: EdgeInsets.only(top: 10, left: 5),
             child: FlatButton(
                 child:Text(
-                  "Account information",
+                  "App Description",
                   style: TextStyle(
-                    fontFamily: 'LobsterTwo',
+                    fontFamily: 'PermanentMarker',
+                    fontWeight: FontWeight.normal,
                     fontSize: 25,
                     color: Colors.lightBlue[900],
                   ),
@@ -73,19 +77,20 @@ class _SettingsPageState extends State<SettingsPage> {
                 onPressed: (){
                   Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => AccountDetails())
+                      MaterialPageRoute(builder: (context) => AboutAppPage())
                   );
                 }
             ),
           ),
           Container(
             alignment: Alignment.topLeft,
-            margin: EdgeInsets.only(top: 15, left: 5),
+            margin: EdgeInsets.only(top: 10, left: 5),
             child: FlatButton(
                 child:Text(
-                  "About the Developers",
+                  "About the Developer",
                   style: TextStyle(
-                    fontFamily: 'LobsterTwo',
+                    fontFamily: 'PermanentMarker',
+                    fontWeight: FontWeight.normal,
                     fontSize: 25,
                     color: Colors.lightBlue[900],
                   ),

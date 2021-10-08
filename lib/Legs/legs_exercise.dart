@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import '../Settings/settings_page.dart';
 import 'difficult_legs.dart';
@@ -32,16 +31,15 @@ class _LegExerciseState extends State<LegExercise> {
           style: TextStyle(
             fontFamily: 'LobsterTwo',
             fontSize: 25,
+            fontWeight: FontWeight.bold,
             color: Colors.tealAccent[100],
           ),
         ),
         actions: [
           IconButton(
-            onPressed: (){
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => SettingsPage())
-              );
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => SettingsPage()));
             },
             icon: Icon(Icons.settings),
           ),
@@ -56,9 +54,9 @@ class _LegExerciseState extends State<LegExercise> {
                 child: Text(
                   'EASY',
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                    fontFamily: 'PermanentMarker',
+                    fontWeight: FontWeight.normal,
                     fontSize: 25,
-                    fontFamily: 'LobsterTwo',
                     color: Colors.lightBlue[900],
                   ),
                 ),
@@ -67,13 +65,12 @@ class _LegExerciseState extends State<LegExercise> {
               Container(
                 margin: EdgeInsets.only(top: 20, right: 35),
                 child: IconButton(
-                  onPressed: (){
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => EasyLegs())
-                    );
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => EasyLegs()));
                   },
-                  icon: Icon(IconData(57855, fontFamily: 'MaterialIcons'),
+                  icon: Icon(
+                    IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),
@@ -91,8 +88,7 @@ class _LegExerciseState extends State<LegExercise> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16.0),
                       ),
-                      color: Colors.tealAccent[100]
-                  ),
+                      color: Colors.tealAccent[100]),
                   child: IconButton(
                     alignment: Alignment.center,
                     icon: Container(
@@ -101,12 +97,11 @@ class _LegExerciseState extends State<LegExercise> {
                         image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://www.outsideonline.com/wp-content/uploads/migrated-images_parent/migrated-images_43/P430082-1-1_illustration-pushup.jpg')),
+                            image: AssetImage('assets/images/easy_leg.jpg')),
                       ),
                     ),
                     iconSize: 75,
-                    onPressed: (){
-                    },
+                    onPressed: () {},
                   ),
                 ),
                 Container(
@@ -121,19 +116,15 @@ class _LegExerciseState extends State<LegExercise> {
                     alignment: Alignment.center,
                     icon: Container(
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          image: new DecorationImage(
+                        borderRadius: BorderRadius.circular(10.0),
+                        image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://i.pinimg.com/originals/c6/e1/6a/c6e16a9b9dc7d97b0d4ad78b50e7b424.gif'),
-                          )
+                            image: AssetImage('assets/images/easy_leg.jpg')),
                       ),
                     ),
                     iconSize: 75,
-
-                    onPressed: (){
-
-                    },
+                    onPressed: () {},
                   ),
                 ),
                 Container(
@@ -142,28 +133,22 @@ class _LegExerciseState extends State<LegExercise> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16.0),
                       ),
-                      color: Colors.tealAccent[100]
-                  ),
+                      color: Colors.tealAccent[100]),
                   child: IconButton(
                     alignment: Alignment.center,
                     icon: Container(
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          image: new DecorationImage(
+                        borderRadius: BorderRadius.circular(10.0),
+                        image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://cdnb.artstation.com/p/assets/images/images/037/471/019/original/digital-artist-russian-twist.gif?1620463601'),
-                          )
+                            image: AssetImage('assets/images/easy_leg.jpg')),
                       ),
                     ),
                     iconSize: 75,
-
-                    onPressed: (){
-
-                    },
+                    onPressed: () {},
                   ),
                 ),
-
               ],
             ),
           ),
@@ -174,9 +159,9 @@ class _LegExerciseState extends State<LegExercise> {
                 child: Text(
                   'MODERATE',
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                    fontFamily: 'PermanentMarker',
+                    fontWeight: FontWeight.normal,
                     fontSize: 25,
-                    fontFamily: 'LobsterTwo',
                     color: Colors.lightBlue[900],
                   ),
                 ),
@@ -185,13 +170,14 @@ class _LegExerciseState extends State<LegExercise> {
               Container(
                 margin: EdgeInsets.only(top: 20, right: 35),
                 child: IconButton(
-                  onPressed: (){
+                  onPressed: () {
                     Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => ModerateLegs())
-                    );
+                        MaterialPageRoute(
+                            builder: (context) => ModerateLegs()));
                   },
-                  icon: Icon(IconData(57855, fontFamily: 'MaterialIcons'),
+                  icon: Icon(
+                    IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),
@@ -215,19 +201,16 @@ class _LegExerciseState extends State<LegExercise> {
                     alignment: Alignment.center,
                     icon: Container(
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          image: new DecorationImage(
+                        borderRadius: BorderRadius.circular(10.0),
+                        image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://i.pinimg.com/originals/c0/d3/c9/c0d3c948ede881f235ee6e6ea97e57b4.gif'),
-                          )
+                            image:
+                                AssetImage('assets/images/moderate_leg.jpg')),
                       ),
                     ),
                     iconSize: 75,
-
-                    onPressed: (){
-
-                    },
+                    onPressed: () {},
                   ),
                 ),
                 Container(
@@ -242,19 +225,16 @@ class _LegExerciseState extends State<LegExercise> {
                     alignment: Alignment.center,
                     icon: Container(
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          image: new DecorationImage(
+                        borderRadius: BorderRadius.circular(10.0),
+                        image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://www.spotebi.com/wp-content/uploads/2016/01/wood-chop-exercise-illustration-spotebi.gif'),
-                          )
+                            image:
+                                AssetImage('assets/images/moderate_leg.jpg')),
                       ),
                     ),
                     iconSize: 75,
-
-                    onPressed: (){
-
-                    },
+                    onPressed: () {},
                   ),
                 ),
                 Container(
@@ -269,22 +249,18 @@ class _LegExerciseState extends State<LegExercise> {
                     alignment: Alignment.center,
                     icon: Container(
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          image: new DecorationImage(
+                        borderRadius: BorderRadius.circular(10.0),
+                        image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://www.lakediary.com/wp-content/uploads/2017/02/Flutter-kicks.gif'),
-                          )
+                            image:
+                                AssetImage('assets/images/moderate_leg.jpg')),
                       ),
                     ),
                     iconSize: 75,
-
-                    onPressed: (){
-
-                    },
+                    onPressed: () {},
                   ),
                 ),
-
               ],
             ),
           ),
@@ -295,9 +271,9 @@ class _LegExerciseState extends State<LegExercise> {
                 child: Text(
                   'DIFFICULT',
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                    fontFamily: 'PermanentMarker',
+                    fontWeight: FontWeight.normal,
                     fontSize: 25,
-                    fontFamily: 'LobsterTwo',
                     color: Colors.lightBlue[900],
                   ),
                 ),
@@ -306,13 +282,14 @@ class _LegExerciseState extends State<LegExercise> {
               Container(
                 margin: EdgeInsets.only(top: 20, right: 35),
                 child: IconButton(
-                  onPressed: (){
+                  onPressed: () {
                     Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => DifficultLegs())
-                    );
+                        MaterialPageRoute(
+                            builder: (context) => DifficultLegs()));
                   },
-                  icon: Icon(IconData(57855, fontFamily: 'MaterialIcons'),
+                  icon: Icon(
+                    IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),
@@ -330,25 +307,21 @@ class _LegExerciseState extends State<LegExercise> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16.0),
                       ),
-                      color: Colors.deepPurple[800]
-                  ),
+                      color: Colors.deepPurple[800]),
                   child: IconButton(
                     alignment: Alignment.center,
                     icon: Container(
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          image: new DecorationImage(
+                        borderRadius: BorderRadius.circular(10.0),
+                        image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://personaltrainer.ebhasin.com/upload/Bicycle%20Crunch.gif'),
-                          )
+                            image:
+                                AssetImage('assets/images/difficult_leg.jpg')),
                       ),
                     ),
                     iconSize: 75,
-
-                    onPressed: (){
-
-                    },
+                    onPressed: () {},
                   ),
                 ),
                 Container(
@@ -357,25 +330,21 @@ class _LegExerciseState extends State<LegExercise> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16.0),
                       ),
-                      color: Colors.deepPurple[800]
-                  ),
+                      color: Colors.deepPurple[800]),
                   child: IconButton(
                     alignment: Alignment.center,
                     icon: Container(
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          image: new DecorationImage(
+                        borderRadius: BorderRadius.circular(10.0),
+                        image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://i.pinimg.com/originals/fb/a0/32/fba03216f52666e90f227281b48036b4.png'),
-                          )
+                            image:
+                                AssetImage('assets/images/difficult_leg.jpg')),
                       ),
                     ),
                     iconSize: 75,
-
-                    onPressed: (){
-
-                    },
+                    onPressed: () {},
                   ),
                 ),
                 Container(
@@ -384,25 +353,21 @@ class _LegExerciseState extends State<LegExercise> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16.0),
                       ),
-                      color: Colors.deepPurple[800]
-                  ),
+                      color: Colors.deepPurple[800]),
                   child: IconButton(
                     alignment: Alignment.center,
                     icon: Container(
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          image: new DecorationImage(
+                        borderRadius: BorderRadius.circular(10.0),
+                        image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://www.spotebi.com/wp-content/uploads/2015/05/v-sit-exercise-illustration.gif'),
-                          )
+                            image:
+                                AssetImage('assets/images/difficult_leg.jpg')),
                       ),
                     ),
                     iconSize: 75,
-
-                    onPressed: (){
-
-                    },
+                    onPressed: () {},
                   ),
                 ),
               ],

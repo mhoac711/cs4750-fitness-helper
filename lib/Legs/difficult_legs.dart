@@ -36,6 +36,7 @@ class _DifficultLegsState extends State<DifficultLegs> {
           style: TextStyle(
             fontFamily: 'LobsterTwo',
             fontSize: 25,
+            fontWeight: FontWeight.bold,
             color: Colors.tealAccent[100],
           ),
         ),
@@ -58,9 +59,9 @@ class _DifficultLegsState extends State<DifficultLegs> {
             child: Text(
               'DIFFICULT',
               style: TextStyle(
-                fontSize: 35,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'LobsterTwo',
+                fontSize: 32,
+                fontFamily: 'PermanentMarker',
+                fontWeight: FontWeight.normal,
                 color: Colors.deepPurple[800],
 
               ),
@@ -76,8 +77,8 @@ class _DifficultLegsState extends State<DifficultLegs> {
                     'Exercise',
                     style: TextStyle(
                       fontSize: 25,
-                      fontFamily: 'LobsterTwo',
-                      fontWeight: FontWeight.bold,
+                      fontFamily: 'PermanentMarker',
+                      fontWeight: FontWeight.normal,
                       decoration: TextDecoration.underline,
                       color: Colors.deepPurple[800],
                     ),
@@ -90,8 +91,8 @@ class _DifficultLegsState extends State<DifficultLegs> {
                     'Reps/Time',
                     style: TextStyle(
                       fontSize: 25,
-                      fontFamily: 'LobsterTwo',
-                      fontWeight: FontWeight.bold,
+                      fontFamily: 'PermanentMarker',
+                      fontWeight: FontWeight.normal,
                       decoration: TextDecoration.underline,
                       color: Colors.deepPurple[800],
 
@@ -119,8 +120,9 @@ class _DifficultLegsState extends State<DifficultLegs> {
                                 Text(
                                   '${diffLegList[index]['name']}',
                                   style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'LobsterTwo',
+                                    fontSize: 18,
+                                    fontFamily: 'PermanentMarker',
+                                    fontWeight: FontWeight.normal,
                                     color: Colors.blue[50],
                                   ),
                                 ),
@@ -130,8 +132,9 @@ class _DifficultLegsState extends State<DifficultLegs> {
                                   child: Text(
                                     '${diffLegList[index]['reps']}',
                                     style: TextStyle(
-                                      fontSize: 20,
-                                      fontFamily: 'LobsterTwo',
+                                      fontSize: 18,
+                                      fontFamily: 'PermanentMarker',
+                                      fontWeight: FontWeight.normal,
                                       color: Colors.blue[50],
                                     ),
                                   ),

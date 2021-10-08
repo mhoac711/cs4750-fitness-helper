@@ -38,6 +38,7 @@ class _EasyLegsState extends State<EasyLegs> {
           style: TextStyle(
             fontFamily: 'LobsterTwo',
             fontSize: 25,
+            fontWeight: FontWeight.bold,
             color: Colors.tealAccent[100],
           ),
         ),
@@ -61,8 +62,8 @@ class _EasyLegsState extends State<EasyLegs> {
               'EASY',
               style: TextStyle(
                 fontSize: 35,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'LobsterTwo',
+                fontFamily: 'PermanentMarker',
+                fontWeight: FontWeight.normal,
                 color: Colors.tealAccent[100],
 
               ),
@@ -78,8 +79,8 @@ class _EasyLegsState extends State<EasyLegs> {
                     'Exercise',
                     style: TextStyle(
                       fontSize: 25,
-                      fontFamily: 'LobsterTwo',
-                      fontWeight: FontWeight.bold,
+                      fontFamily: 'PermanentMarker',
+                      fontWeight: FontWeight.normal,
                       decoration: TextDecoration.underline,
                       color: Colors.tealAccent[100],
                     ),
@@ -92,8 +93,8 @@ class _EasyLegsState extends State<EasyLegs> {
                     'Reps/Time',
                     style: TextStyle(
                       fontSize: 25,
-                      fontFamily: 'LobsterTwo',
-                      fontWeight: FontWeight.bold,
+                      fontFamily: 'PermanentMarker',
+                      fontWeight: FontWeight.normal,
                       decoration: TextDecoration.underline,
                       color: Colors.tealAccent[100],
 
@@ -121,8 +122,9 @@ class _EasyLegsState extends State<EasyLegs> {
                                 Text(
                                   '${easyLegList[index]['name']}',
                                   style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'LobsterTwo',
+                                    fontSize: 18,
+                                    fontFamily: 'PermanentMarker',
+                                    fontWeight: FontWeight.normal,
                                     color: Colors.blue[50],
                                   ),
                                 ),
@@ -132,8 +134,9 @@ class _EasyLegsState extends State<EasyLegs> {
                                   child: Text(
                                     '${easyLegList[index]['reps']}',
                                     style: TextStyle(
-                                      fontSize: 20,
-                                      fontFamily: 'LobsterTwo',
+                                      fontSize: 18,
+                                      fontFamily: 'PermanentMarker',
+                                      fontWeight: FontWeight.normal,
                                       color: Colors.blue[50],
                                     ),
                                   ),

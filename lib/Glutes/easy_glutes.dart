@@ -37,6 +37,7 @@ class _EasyGlutesState extends State<EasyGlutes> {
           style: TextStyle(
             fontFamily: 'LobsterTwo',
             fontSize: 25,
+            fontWeight: FontWeight.bold,
             color: Colors.tealAccent[100],
           ),
         ),
@@ -59,9 +60,9 @@ class _EasyGlutesState extends State<EasyGlutes> {
             child: Text(
               'EASY',
               style: TextStyle(
+                fontFamily: 'PermanentMarker',
+                fontWeight: FontWeight.normal,
                 fontSize: 35,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'LobsterTwo',
                 color: Colors.tealAccent[100],
 
               ),
@@ -76,9 +77,9 @@ class _EasyGlutesState extends State<EasyGlutes> {
                   child: Text(
                     'Exercise',
                     style: TextStyle(
+                      fontFamily: 'PermanentMarker',
+                      fontWeight: FontWeight.normal,
                       fontSize: 25,
-                      fontFamily: 'LobsterTwo',
-                      fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
                       color: Colors.tealAccent[100],
                     ),
@@ -90,9 +91,9 @@ class _EasyGlutesState extends State<EasyGlutes> {
                   child: Text(
                     'Reps/Time',
                     style: TextStyle(
+                      fontFamily: 'PermanentMarker',
+                      fontWeight: FontWeight.normal,
                       fontSize: 25,
-                      fontFamily: 'LobsterTwo',
-                      fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
                       color: Colors.tealAccent[100],
 
@@ -120,8 +121,9 @@ class _EasyGlutesState extends State<EasyGlutes> {
                                 Text(
                                   '${easyGluteList[index]['name']}',
                                   style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'LobsterTwo',
+                                    fontSize: 18,
+                                    fontFamily: 'PermanentMarker',
+                                    fontWeight: FontWeight.normal,
                                     color: Colors.blue[50],
                                   ),
                                 ),
@@ -131,8 +133,9 @@ class _EasyGlutesState extends State<EasyGlutes> {
                                   child: Text(
                                     '${easyGluteList[index]['reps']}',
                                     style: TextStyle(
-                                      fontSize: 20,
-                                      fontFamily: 'LobsterTwo',
+                                      fontSize: 18,
+                                      fontFamily: 'PermanentMarker',
+                                      fontWeight: FontWeight.normal,
                                       color: Colors.blue[50],
                                     ),
                                   ),

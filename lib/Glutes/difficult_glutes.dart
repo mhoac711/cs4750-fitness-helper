@@ -35,6 +35,7 @@ class _DifficultGlutesState extends State<DifficultGlutes> {
           style: TextStyle(
             fontFamily: 'LobsterTwo',
             fontSize: 25,
+            fontWeight: FontWeight.bold,
             color: Colors.tealAccent[100],
           ),
         ),
@@ -57,9 +58,9 @@ class _DifficultGlutesState extends State<DifficultGlutes> {
             child: Text(
               'DIFFICULT',
               style: TextStyle(
-                fontSize: 35,
-                fontWeight: FontWeight.bold,
-                fontFamily: 'LobsterTwo',
+                fontFamily: 'PermanentMarker',
+                fontWeight: FontWeight.normal,
+                fontSize: 32,
                 color: Colors.deepPurple[800],
 
               ),
@@ -74,9 +75,9 @@ class _DifficultGlutesState extends State<DifficultGlutes> {
                   child: Text(
                     'Exercise',
                     style: TextStyle(
+                      fontFamily: 'PermanentMarker',
+                      fontWeight: FontWeight.normal,
                       fontSize: 25,
-                      fontFamily: 'LobsterTwo',
-                      fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
                       color: Colors.deepPurple[800],
                     ),
@@ -88,9 +89,9 @@ class _DifficultGlutesState extends State<DifficultGlutes> {
                   child: Text(
                     'Reps/Time',
                     style: TextStyle(
+                      fontFamily: 'PermanentMarker',
+                      fontWeight: FontWeight.normal,
                       fontSize: 25,
-                      fontFamily: 'LobsterTwo',
-                      fontWeight: FontWeight.bold,
                       decoration: TextDecoration.underline,
                       color: Colors.deepPurple[800],
 
@@ -118,8 +119,9 @@ class _DifficultGlutesState extends State<DifficultGlutes> {
                                 Text(
                                   '${diffGluteList[index]['name']}',
                                   style: TextStyle(
-                                    fontSize: 20,
-                                    fontFamily: 'LobsterTwo',
+                                    fontSize: 18,
+                                    fontFamily: 'PermanentMarker',
+                                    fontWeight: FontWeight.normal,
                                     color: Colors.blue[50],
                                   ),
                                 ),
@@ -129,8 +131,9 @@ class _DifficultGlutesState extends State<DifficultGlutes> {
                                   child: Text(
                                     '${diffGluteList[index]['reps']}',
                                     style: TextStyle(
-                                      fontSize: 20,
-                                      fontFamily: 'LobsterTwo',
+                                      fontSize: 18,
+                                      fontFamily: 'PermanentMarker',
+                                      fontWeight: FontWeight.normal,
                                       color: Colors.blue[50],
                                     ),
                                   ),

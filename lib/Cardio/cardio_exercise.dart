@@ -31,6 +31,7 @@ class _CardioExerciseState extends State<CardioExercise> {
           'F / H',
           style: TextStyle(
             fontFamily: 'LobsterTwo',
+            fontWeight: FontWeight.bold,
             fontSize: 25,
             color: Colors.tealAccent[100],
           ),
@@ -56,9 +57,9 @@ class _CardioExerciseState extends State<CardioExercise> {
                 child: Text(
                   'EASY',
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                    fontFamily: 'PermanentMarker',
+                    fontWeight: FontWeight.normal,
                     fontSize: 25,
-                    fontFamily: 'LobsterTwo',
                     color: Colors.lightBlue[900],
                   ),
                 ),
@@ -101,8 +102,8 @@ class _CardioExerciseState extends State<CardioExercise> {
                         image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://www.outsideonline.com/wp-content/uploads/migrated-images_parent/migrated-images_43/P430082-1-1_illustration-pushup.jpg')),
-                      ),
+                            image:
+                            AssetImage('assets/images/easy_cardio1.jpg')),                      ),
                     ),
                     iconSize: 75,
                     onPressed: (){
@@ -125,8 +126,8 @@ class _CardioExerciseState extends State<CardioExercise> {
                           image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://i.pinimg.com/originals/c6/e1/6a/c6e16a9b9dc7d97b0d4ad78b50e7b424.gif'),
-                          )
+                              image:
+                              AssetImage('assets/images/easy_cardio2.jpg')),
                       ),
                     ),
                     iconSize: 75,
@@ -152,8 +153,8 @@ class _CardioExerciseState extends State<CardioExercise> {
                           image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://cdnb.artstation.com/p/assets/images/images/037/471/019/original/digital-artist-russian-twist.gif?1620463601'),
-                          )
+                              image:
+                              AssetImage('assets/images/easy_cardio1.jpg')),
                       ),
                     ),
                     iconSize: 75,
@@ -174,9 +175,9 @@ class _CardioExerciseState extends State<CardioExercise> {
                 child: Text(
                   'MODERATE',
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                    fontFamily: 'PermanentMarker',
+                    fontWeight: FontWeight.normal,
                     fontSize: 25,
-                    fontFamily: 'LobsterTwo',
                     color: Colors.lightBlue[900],
                   ),
                 ),
@@ -219,8 +220,8 @@ class _CardioExerciseState extends State<CardioExercise> {
                           image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://i.pinimg.com/originals/c0/d3/c9/c0d3c948ede881f235ee6e6ea97e57b4.gif'),
-                          )
+                              image:
+                              AssetImage('assets/images/moderate_cardio1.jpg')),
                       ),
                     ),
                     iconSize: 75,
@@ -246,8 +247,8 @@ class _CardioExerciseState extends State<CardioExercise> {
                           image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://www.spotebi.com/wp-content/uploads/2016/01/wood-chop-exercise-illustration-spotebi.gif'),
-                          )
+                              image:
+                              AssetImage('assets/images/moderate_cardio2.jpg')),
                       ),
                     ),
                     iconSize: 75,
@@ -273,8 +274,8 @@ class _CardioExerciseState extends State<CardioExercise> {
                           image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://www.lakediary.com/wp-content/uploads/2017/02/Flutter-kicks.gif'),
-                          )
+                              image:
+                              AssetImage('assets/images/moderate_cardio1.jpg')),
                       ),
                     ),
                     iconSize: 75,
@@ -295,9 +296,9 @@ class _CardioExerciseState extends State<CardioExercise> {
                 child: Text(
                   'DIFFICULT',
                   style: TextStyle(
-                    fontWeight: FontWeight.bold,
+                    fontFamily: 'PermanentMarker',
+                    fontWeight: FontWeight.normal,
                     fontSize: 25,
-                    fontFamily: 'LobsterTwo',
                     color: Colors.lightBlue[900],
                   ),
                 ),
@@ -340,8 +341,8 @@ class _CardioExerciseState extends State<CardioExercise> {
                           image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://personaltrainer.ebhasin.com/upload/Bicycle%20Crunch.gif'),
-                          )
+                              image:
+                              AssetImage('assets/images/difficult_cardio1.jpg')),
                       ),
                     ),
                     iconSize: 75,
@@ -367,8 +368,8 @@ class _CardioExerciseState extends State<CardioExercise> {
                           image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://i.pinimg.com/originals/fb/a0/32/fba03216f52666e90f227281b48036b4.png'),
-                          )
+                              image:
+                              AssetImage('assets/images/difficult_cardio2.jpg')),
                       ),
                     ),
                     iconSize: 75,
@@ -394,8 +395,8 @@ class _CardioExerciseState extends State<CardioExercise> {
                           image: new DecorationImage(
                             fit: BoxFit.fill,
                             alignment: FractionalOffset.center,
-                            image: NetworkImage('https://www.spotebi.com/wp-content/uploads/2015/05/v-sit-exercise-illustration.gif'),
-                          )
+                              image:
+                              AssetImage('assets/images/difficult_cardio3.jpg')),
                       ),
                     ),
                     iconSize: 75,
