@@ -48,7 +48,7 @@ class _AboutAppPageState extends State<AboutAppPage> {
           children: [
             Container(
               alignment: Alignment.center,
-              margin: EdgeInsets.only(left: 0, top: 35, bottom: 20),
+              margin: EdgeInsets.only(left: 0, top: 35, bottom: 10),
               child: Text(
                 'App Description: ',
                 style: TextStyle(
@@ -62,9 +62,9 @@ class _AboutAppPageState extends State<AboutAppPage> {
             ),
             Container(
               alignment: Alignment.topLeft,
-              margin: EdgeInsets.only(left: 25, top: 0, bottom: 10),
+              margin: EdgeInsets.only(left: 25, top: 0, bottom: 10, right: 25),
               child: Text(
-                'The purpose of this app is provide users with an easy way of accessing and finding exercises that fit the level of experience and range in difficulty.',
+                'The purpose of this app is to provide users with an easy way of accessing and finding exercises that fit the level of experience and range in difficulty.',
                 style: TextStyle(
                   fontFamily: 'PermanentMarker',
                   fontSize: 25,

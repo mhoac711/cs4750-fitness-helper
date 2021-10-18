@@ -106,7 +106,7 @@ class _AboutPageState extends State<AboutPage> {
             alignment: Alignment.topLeft,
             margin: EdgeInsets.only(top: 10,left: 25),
             child: Text(
-              'Hobbies: Basketball, running, taking care my dog',
+              'Hobbies: Basketball, running, taking care of my dog',
               style: TextStyle(
                 fontFamily: 'PermanentMarker',
                 fontSize: 20,
