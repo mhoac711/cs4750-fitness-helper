@@ -74,7 +74,8 @@ class _CardioExerciseState extends State<CardioExercise> {
                         MaterialPageRoute(builder: (context) => EasyCardio())
                     );
                   },
-                  icon: Icon(IconData(57855, fontFamily: 'MaterialIcons'),
+                  icon: Icon(
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),
@@ -192,7 +193,8 @@ class _CardioExerciseState extends State<CardioExercise> {
                         MaterialPageRoute(builder: (context) => ModerateCardio())
                     );
                   },
-                  icon: Icon(IconData(57855, fontFamily: 'MaterialIcons'),
+                  icon: Icon(
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),
@@ -313,7 +315,8 @@ class _CardioExerciseState extends State<CardioExercise> {
                         MaterialPageRoute(builder: (context) => DifficultCardio())
                     );
                   },
-                  icon: Icon(IconData(57855, fontFamily: 'MaterialIcons'),
+                  icon: Icon(
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),

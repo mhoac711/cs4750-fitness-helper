@@ -74,7 +74,8 @@ class _GlutesExerciseState extends State<GlutesExercise> {
                         MaterialPageRoute(builder: (context) => EasyGlutes())
                     );
                   },
-                  icon: Icon(IconData(57855, fontFamily: 'MaterialIcons'),
+                  icon: Icon(
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),
@@ -192,7 +193,8 @@ class _GlutesExerciseState extends State<GlutesExercise> {
                         MaterialPageRoute(builder: (context) => ModerateGlutes())
                     );
                   },
-                  icon: Icon(IconData(57855, fontFamily: 'MaterialIcons'),
+                  icon: Icon(
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),
@@ -313,7 +315,8 @@ class _GlutesExerciseState extends State<GlutesExercise> {
                         MaterialPageRoute(builder: (context) => DifficultGlutes())
                     );
                   },
-                  icon: Icon(IconData(57855, fontFamily: 'MaterialIcons'),
+                  icon: Icon(
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),

@@ -70,7 +70,7 @@ class _LegExerciseState extends State<LegExercise> {
                         MaterialPageRoute(builder: (context) => EasyLegs()));
                   },
                   icon: Icon(
-                    IconData(57855, fontFamily: 'MaterialIcons'),
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),
@@ -177,7 +177,7 @@ class _LegExerciseState extends State<LegExercise> {
                             builder: (context) => ModerateLegs()));
                   },
                   icon: Icon(
-                    IconData(57855, fontFamily: 'MaterialIcons'),
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),
@@ -289,7 +289,7 @@ class _LegExerciseState extends State<LegExercise> {
                             builder: (context) => DifficultLegs()));
                   },
                   icon: Icon(
-                    IconData(57855, fontFamily: 'MaterialIcons'),
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),

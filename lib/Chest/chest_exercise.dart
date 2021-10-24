@@ -74,7 +74,8 @@ class _ChestExerciseState extends State<ChestExercise> {
                         MaterialPageRoute(builder: (context) => EasyChest())
                     );
                   },
-                  icon: Icon(IconData(57855, fontFamily: 'MaterialIcons'),
+                  icon: Icon(
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),
@@ -192,7 +193,8 @@ class _ChestExerciseState extends State<ChestExercise> {
                         MaterialPageRoute(builder: (context) => ModerateChest())
                     );
                   },
-                  icon: Icon(IconData(57855, fontFamily: 'MaterialIcons'),
+                  icon: Icon(
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),
@@ -313,7 +315,8 @@ class _ChestExerciseState extends State<ChestExercise> {
                         MaterialPageRoute(builder: (context) => DifficultChest())
                     );
                   },
-                  icon: Icon(IconData(57855, fontFamily: 'MaterialIcons'),
+                  icon: Icon(
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),

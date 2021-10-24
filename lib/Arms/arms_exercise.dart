@@ -70,7 +70,7 @@ class _ArmsExerciseState extends State<ArmsExercise> {
                         MaterialPageRoute(builder: (context) => EasyArms()));
                   },
                   icon: Icon(
-                    IconData(57855, fontFamily: 'MaterialIcons'),
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),
@@ -177,7 +177,7 @@ class _ArmsExerciseState extends State<ArmsExercise> {
                             builder: (context) => ModerateArms()));
                   },
                   icon: Icon(
-                    IconData(57855, fontFamily: 'MaterialIcons'),
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),
@@ -289,7 +289,7 @@ class _ArmsExerciseState extends State<ArmsExercise> {
                             builder: (context) => DifficultArms()));
                   },
                   icon: Icon(
-                    IconData(57855, fontFamily: 'MaterialIcons'),
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),

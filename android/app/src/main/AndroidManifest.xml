@@ -2,7 +2,7 @@
     package="cpp.edu.mhoac.cs4750_fitness_helper">
    <application
         android:label="cs4750_fitness_helper"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

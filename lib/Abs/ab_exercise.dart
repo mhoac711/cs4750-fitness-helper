@@ -71,7 +71,7 @@ class _AbExerciseState extends State<AbExercise> {
                         MaterialPageRoute(builder: (context) => EasyAb()));
                   },
                   icon: Icon(
-                    IconData(57855, fontFamily: 'MaterialIcons'),
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),
@@ -176,7 +176,7 @@ class _AbExerciseState extends State<AbExercise> {
                         MaterialPageRoute(builder: (context) => ModerateAb()));
                   },
                   icon: Icon(
-                    IconData(57855, fontFamily: 'MaterialIcons'),
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),
@@ -283,7 +283,7 @@ class _AbExerciseState extends State<AbExercise> {
                         MaterialPageRoute(builder: (context) => DifficultAb()));
                   },
                   icon: Icon(
-                    IconData(57855, fontFamily: 'MaterialIcons'),
+                    const IconData(57855, fontFamily: 'MaterialIcons'),
                     size: 25,
                     color: Colors.lightBlue[900],
                   ),

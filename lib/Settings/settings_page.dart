@@ -1,7 +1,6 @@
 import 'package:cs4750_fitness_helper/Settings/about_app_page.dart';
 import 'package:flutter/material.dart';
 import 'about_page.dart';
-import 'account_details.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({Key? key}) : super(key: key);
