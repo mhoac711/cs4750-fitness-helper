@@ -22,6 +22,6 @@ In this app, users can easily navigate through the numerous amount of exercises 
 ![Fitness Helper Wireframe](https://user-images.githubusercontent.com/89217847/140881583-63fee088-06c0-498b-9e9f-233e7f952962.png)
 
 # 4. [Google Play Store Download](http://unbouncepages.com/25d7727e-4124-11ec-b7a6-024218c22373/)
-
+ 
 
 
